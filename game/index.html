@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Game</title>
+  <!--[if IE]><script src="js/excanvas.js"></script><![endif]-->
+  <script src="js/prototype-1.6.0.2.js"></script>
+  <script src="js/box2d.js"></script>
+  <script src="js/draw_world.js"></script>
+  <script src="game.js"></script>
+  <style>
+    canvas {
+      background-image:url(image/background.jpg);
+      position:absolute;
+      top:0;
+      left:0;
+    }
+    #result {
+      display:none; 
+      color:#FFF; 
+      text-align:center; 
+      font-size:40px; 
+      font-weight:bold;
+      position:absolute;
+      top:0;
+      left:0; 
+      width:1000px;
+      height:500px;
+      padding-top:200px;
+      text-decoration:none;
+    }
+  </style>
+</head>
+<body>
+  <a id="result" href="javascript:window.location.reload();"></a>
+  <canvas width="1000" height="500"></canvas>
+</body>
+</html>
