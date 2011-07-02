@@ -55,9 +55,8 @@ club.userData = 'club';
 var targetSd = new b2CircleDef();
 targetSd.density = 1;
 targetSd.radius = 20;
-targetSd.categoryBits = 8;  // 1000
-targetSd.maskBits = 4;      // 0100
-targetSd.groupIndex = 1;
+targetSd.categoryBits = 4;  // 0100
+targetSd.maskBits = 2;      // 0010
 var targetBd = new b2BodyDef();
 targetBd.AddShape(targetSd);
 targetBd.position.Set(950, 180);
@@ -113,7 +112,6 @@ function handleContacts(w) {
     pieceSd1.vertexCount = pieceSd1.vertices.length;
     pieceSd1.categoryBits = 8;  // 1000
     pieceSd1.maskBits = 9;      // 1001
-    pieceSd1.groupIndex = 1;
     var pieceSd2 = new b2PolyDef();
     pieceSd2.density = 1;
     pieceSd2.vertices = [
@@ -124,7 +122,6 @@ function handleContacts(w) {
     pieceSd2.vertexCount = pieceSd2.vertices.length;
     pieceSd2.categoryBits = 8;  // 1000
     pieceSd2.maskBits = 9;      // 1001
-    pieceSd2.groupIndex = 1;
     var pieceBd = new b2BodyDef();
     pieceBd.AddShape(pieceSd1);
     pieceBd.AddShape(pieceSd2);
