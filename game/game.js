@@ -51,7 +51,7 @@ clubJd.anchorPoint = new b2Vec2(200, 300);
 var club = world.CreateJoint(clubJd);
 club.userData = 'club';
 
-// 的
+// ターゲット 
 var targetSd = new b2CircleDef();
 targetSd.density = 1;
 targetSd.radius = 20;
